@@ -5,9 +5,10 @@
 <h4>Kelas : TI-1E<h4>
 
 ## 2.1 Pemilihan
-### 2.2.1 Praktikum Pemilian
+### 2.2.1 Praktikum Pemilihan
 1. Buatlah program untuk menghitung nilai akhir dari mahasiswa dengan ketentuan 20% nilai tugas, 20% dari nilai kuis, 30% nilai UTS, dan 40% nilai UAS. Setiap nilai yang dimasukkan mempunyai batas nilai 0 ‐ 100. Ketika pengguna memasukkan di luar rentang tersebut maka akan keluar output “nilai tidak valid”. Ketika nilai akhir sudah didapatkan selanjutnya lakukan konversi nilai dengan ketentuan sebagai berikut:
-![Flowchart Pemilihan](images/bagan1.png)
+
+    ![Flowchart Pemilihan](images/bagan1.png)
 
     Jika Nilai Huruf yang didapatkan adalah A, B+, B, C+, C maka LULUS, jika nilai huruf D dan E maka TIDAK LULUS.
     - Input dari program berupa komponen nilai tugas, kuis, UTS, UAS
@@ -43,7 +44,9 @@ semester lalu. Formula untuk menghitung IP semester sebagai berikut:
 𝐼𝑃 𝑆𝑒𝑚𝑒𝑠𝑡𝑒𝑟 = ∑𝑖(𝑁𝑖𝑙𝑎𝑖 𝑆𝑒𝑡𝑎𝑟𝑎𝑖 ∗ 𝑏𝑜𝑏𝑜𝑡 𝑆𝐾𝑆𝑖) / ∑ 𝑆𝐾𝑆
 
     Nilai setara didapatkan dari tabel konversi berikut ini: 
+
     ![Flowchart array](images/bagan1.png)  
+
     Input dari program berupa nama mata kuliah, bobot SKS, serta nilai huruf dari mata kuliah tersebut.
 ### Jawaban
 1. Berikut Kode dan Hasilnya
@@ -53,7 +56,9 @@ semester lalu. Formula untuk menghitung IP semester sebagai berikut:
 ### 2.5.1 Praktikum Fungsi
 1. RoyalGarden adalah toko bunga yang memiliki banyak cabang. Setiap hari Stock Bunga dan bungabunga yang dijual selalu dicatat dengan rincian seperti berikut ini:
 Baris = Cabang Toko, Kolom = Stock bunga pada hari x
+
     ![Flowchart fungsi](images/bagan2.png)
+
     Rincian Harga Aglonema =75.000, Keladi = 50.000, Alocasia =60.000, Mawar =10.000.
     - Buatlah fungsi untuk menampilkan pendapatan setiap cabang jika semua bunga habis terjual.
     - Tampilkan status dari setiap cabang dengan ketentuan sebagai berikut ini :
