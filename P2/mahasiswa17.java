@@ -1,5 +1,3 @@
-//public package P2;
-
 class mahasiswa17 {
     String nama17;
     String nim17;
@@ -18,7 +16,6 @@ class mahasiswa17 {
     }
 
     void updateIpk17(double ipkBaru17) {
-        // ipk17 = ipkBaru17;
         if (ipkBaru17 >= 0.0 && ipkBaru17 <= 4.0) {
             ipk17 = ipkBaru17;
         } else {
@@ -36,5 +33,16 @@ class mahasiswa17 {
         } else {
             return "Kinerja kurang";
         }
+    }
+
+    public mahasiswa17(){
+
+    }
+
+    public mahasiswa17(String nm17, String nim17, double ipk17, String kls17){
+        nama17 = nm17;
+        this.nim17 = nim17;
+        this.ipk17 = ipk17;
+        kelas17 = kls17;
     }
 }
