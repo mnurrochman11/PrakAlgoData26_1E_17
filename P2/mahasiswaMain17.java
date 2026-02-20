@@ -15,5 +15,8 @@ public class mahasiswaMain17 {
         mahasiswa17 mhs2_17 = new mahasiswa17("Annisa Nabila", "2141720160", 3.25, "TI 2L");
         mhs2_17.updateIpk17(3.30);
         mhs2_17.tampiklkanInformasi17();
+
+        mahasiswa17 nur17 = new mahasiswa17("Muhammad Nur Rochman","254107020121",4.0,"TI 1E");
+        nur17.tampiklkanInformasi17();
     }
 }
