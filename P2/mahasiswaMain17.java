@@ -11,5 +11,9 @@ public class mahasiswaMain17 {
         mhsi_17.ubahKelas17("S1 2K");
         mhsi_17.updateIpk17(3.60);
         mhsi_17.tampiklkanInformasi17();
+
+        mahasiswa17 mhs2_17 = new mahasiswa17("Annisa Nabila", "2141720160", 3.25, "TI 2L");
+        mhs2_17.updateIpk17(3.30);
+        mhs2_17.tampiklkanInformasi17();
     }
 }
