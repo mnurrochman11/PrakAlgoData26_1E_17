@@ -183,23 +183,23 @@ penambahan kode di file mahasiswaMain17 :
    (thnSkrg) yang menjadi parameter input method ini. Hasil perhitungan memberikan informasi tentang lamanya dosen bekerja di perguruan tinggi.
    - ubahKeahlian(bidang: String): method ini digunakan untuk mengubah bidang keahlian dosen.
 
-   ### Jawaban
-   1. Berikut kode dan hasilnya :
+### Jawaban
+1. Berikut kode dan hasilnya :
 
-      ![images praktikum1_1](images/praktikum1_1.png)
+   ![images praktikum1_1](images/praktikum1_1.png)
 
-      ![images praktikum1_2](images/praktikum1_2.png)
+   ![images praktikum1_2](images/praktikum1_2.png)
 
-      ![images praktikum1_hasil](images/praktikum1_hasil.png)
+   ![images praktikum1_hasil](images/praktikum1_hasil.png)
 
-      ![images commitPraktikum1](images/commitPraktikum1.png)
+   ![images commitPraktikum1](images/commitPraktikum1.png)
 
-   2. Berikut kode dan hasilnya :
+2. Berikut kode dan hasilnya :
 
-      ![images praktikum1_1](images/praktikum2_1.png)
+   ![images praktikum1_1](images/praktikum2_1.png)
 
-      ![images praktikum1_2](images/praktikum2_2.png)
+   ![images praktikum1_2](images/praktikum2_2.png)
 
-      ![images praktikum1_hasil](images/praktikum2_hasil.png)
+   ![images praktikum1_hasil](images/praktikum2_hasil.png)
 
-      ![images commitPraktikum1](images/commitPraktikum2.png)
+   ![images commitPraktikum1](images/commitPraktikum2.png)
