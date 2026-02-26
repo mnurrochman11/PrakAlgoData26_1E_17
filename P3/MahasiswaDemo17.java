@@ -14,9 +14,9 @@ public class MahasiswaDemo17 {
             System.out.println("Masukkan Data Mahasiswa ke- " + (i + 1));
             System.out.print("NIM   : ");
             arrayOfMahasiswa17[i].nim17 = nur17.nextLine();
-            System.out.print("Nama   : ");
+            System.out.print("Nama  : ");
             arrayOfMahasiswa17[i].nama17 = nur17.nextLine();
-            System.out.print("Kelas   : ");
+            System.out.print("Kelas : ");
             arrayOfMahasiswa17[i].kelas17 = nur17.nextLine();
             System.out.print("IPK   : ");
             dummy17 = nur17.nextLine();
@@ -25,12 +25,8 @@ public class MahasiswaDemo17 {
         }
 
         for (int i = 0; i < 3; i++) {
-            System.out.println("Masukkan Data Mahasiswa ke- " + (i + 1));
-            System.out.println("Nim : " + arrayOfMahasiswa17[i].nim17);
-            System.out.println("Nama : " + arrayOfMahasiswa17[i].nama17);
-            System.out.println("Kelas : " + arrayOfMahasiswa17[i].kelas17);
-            System.out.println("IPK : " + arrayOfMahasiswa17[i].ipk17);
-            System.out.println("--------------------------");
+            System.out.println("Data Mahasiswa ke- " + (i + 1));
+            arrayOfMahasiswa17[i].cetakInfo();
         }
 
     }
