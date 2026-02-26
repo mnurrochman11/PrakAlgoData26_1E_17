@@ -8,7 +8,7 @@ public class MataKuliah17 {
     Scanner nur17 = new Scanner(System.in);
 
     public MataKuliah17() {
-        
+
     }
 
     public MataKuliah17(String kode17, String nama17, int sks17, int jumlahJam17) {
@@ -28,6 +28,14 @@ public class MataKuliah17 {
         System.out.print("Jumlah jam : ");
         jumlahJam17 = Integer.parseInt(nur17.nextLine());
         System.out.println("----------------------------------");
+    }
+
+    public void cetakInfo() {
+        System.out.println("Kode       : " + kode17);
+        System.out.println("Nama       : " + nama17);
+        System.out.println("SKS        : " + sks17);
+        System.out.println("Jumlah jam : " + jumlahJam17);
+        System.out.println("-------------------------");
     }
 
 }
