@@ -72,4 +72,5 @@ public class DataDosen17 {
         System.out.println("Dosen Paling Muda:");
         termuda17.cetakInfo17();
     }
+    
 }

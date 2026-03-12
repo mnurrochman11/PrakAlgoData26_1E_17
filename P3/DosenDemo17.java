@@ -55,5 +55,6 @@ public class DosenDemo17 {
 
         System.out.println("\n=== DOSEN PALING MUDA ===");
         dataDosen17.infoDosenPalingMuda17(arrayOfDosen17);
+        
     }
 }
