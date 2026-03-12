@@ -16,8 +16,8 @@
 ### 5.2.3 Pertanyaan
 1. Pada bagian if berisi basecase yaitu kondisi akhir dari rekursif, sedangkan pada bagian else merupakan bagian rekursif yang memanggil fungsi kembali dengan nilai yang lebih kecil.
 2. Bisa, kita ambil contoh pakai while :
-![images kode 523](images/523_no2.png)
-![images kode 522](images/522.png)
+   ![images kode 523](images/523_no2.png)
+   ![images kode 522](images/522.png)
 3. - fakto *= i; ===> Iterasi (Brute Force), 
    - n * faktorialDC(n-1); ===> Rekursi (Divide and Conquer). 
 4. - Brute Force ===> Menggunakan metode perulangan dengan cara linear dan penggunaannya lebih sederhana.
