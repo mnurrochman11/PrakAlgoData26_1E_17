@@ -38,5 +38,22 @@ public class DosenDemo17 {
             dsn17.cetakInfo17();
             no17++;
         }
+
+        DataDosen17 dataDosen17 = new DataDosen17();
+
+        System.out.println("\n=== DATA SEMUA DOSEN ===");
+        dataDosen17.dataSemuaDosen17(arrayOfDosen17);
+
+        System.out.println("\n=== JUMLAH DOSEN PER JENIS KELAMIN ===");
+        dataDosen17.jumlahDosenPerJenisKelamin17(arrayOfDosen17);
+
+        System.out.println("\n=== RATA-RATA USIA DOSEN PER JENIS KELAMIN ===");
+        dataDosen17.rerataUsiaDosenPerJenisKelamin17(arrayOfDosen17);
+
+        System.out.println("\n=== DOSEN PALING TUA ===");
+        dataDosen17.infoDosenPalingTua17(arrayOfDosen17);
+
+        System.out.println("\n=== DOSEN PALING MUDA ===");
+        dataDosen17.infoDosenPalingMuda17(arrayOfDosen17);
     }
 }
