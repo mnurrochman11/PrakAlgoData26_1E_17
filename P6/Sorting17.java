@@ -4,35 +4,35 @@ public class Sorting17 {
     int[] data;
     int jumData;
 
-    Sorting17 (int Data[], int jmlDat){
+    Sorting17(int Data[], int jmlDat) {
         jumData = jmlDat;
-        data =new int[jmlDat];
+        data = new int[jmlDat];
         for (int i = 0; i < jumData; i++) {
             data[i] = Data[i];
         }
     }
 
-    void bubleSort(){
+    void bubleSort() {
         int temp = 0;
         for (int i = 0; i < jumData; i++) {
             for (int j = 1; j < jumData - i; j++) {
                 if (data[j - 1] > data[j]) {
                     temp = data[j];
-                    data[j] = data[j - 1]; 
+                    data[j] = data[j - 1];
                     data[j - 1] = temp;
                 }
             }
         }
     }
 
-    void tampil(){
+    void tampil() {
         for (int i = 0; i < jumData; i++) {
             System.out.print(data[i] + " ");
         }
         System.out.println();
     }
 
-    void selectionSort(){
+    void selectionSort() {
         for (int i = 0; i < jumData - 1; i++) {
             int min = i;
             for (int j = i + 1; j < jumData; j++) {
@@ -43,6 +43,19 @@ public class Sorting17 {
             int temp = data[min];
             data[min] = data[i];
             data[i] = temp;
+        }
+    }
+
+    void insertionSort() {
+        for (int i = 1; i < jumData; i++) {
+            int temp = data[i];
+            int j = i;
+
+            while (j > 0 && data[j - 1] > temp) {
+                data[j] = data[j - 1];
+                j--;
+            }
+            data[j] = temp;
         }
     }
 }
