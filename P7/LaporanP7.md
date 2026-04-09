@@ -39,10 +39,9 @@
    - mid : titik tengah
 4. Tidak bisa bekerja dengan benar, karena binary search butuh data terurut
 5. Hasil tidak sesuai
-
 ![Images](Images/633_no5_1.png)
 
-Cara memperbaiki ubah :
+   Cara memperbaiki ubah :
 ![Images](Images/633_no5_2.png)
 6. Data tidak ditemukan
    - Jika left > right
