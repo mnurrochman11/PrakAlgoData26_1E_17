@@ -1,12 +1,15 @@
 package P7;
 
 public class MahasiswaBerprestasi17 {
-    Mahasiswa17[] listMhs = new Mahasiswa17[5];
-    //Mahasiswa17[] listMhs;
+    // Mahasiswa17[] listMhs = new Mahasiswa17[5];
+    Mahasiswa17[] listMhs;
     int idx;
 
-    MahasiswaBerprestasi17() {
-        listMhs = new Mahasiswa17[5];
+    // MahasiswaBerprestasi17() {
+    // listMhs = new Mahasiswa17[5];
+    // }
+    MahasiswaBerprestasi17(int jumlah) {
+        listMhs = new Mahasiswa17[jumlah];
     }
 
     void tambah(Mahasiswa17 m) {
@@ -50,9 +53,34 @@ public class MahasiswaBerprestasi17 {
             System.out.println("nama\t : " + listMhs[pos].nama);
             System.out.println("kelas\t : " + listMhs[pos].kelas);
             System.out.println("ipk\t : " + x);
-        }else{
+        } else {
             System.out.println("Data mahasiswa dengan IPK " + x + " tidak ditemukan");
         }
+    }
+
+    int findBinarySearch(double cari, int left, int right) {
+        int mid;
+
+        if (right >= left) {
+            mid = (left + right) / 2;
+
+            if (cari == listMhs[mid].ipk) {
+                return mid;
+            }
+            // else if (listMhs[mid].ipk > cari) {
+            // return findBinarySearch(cari, left, mid - 1);
+            // } else {
+            // return findBinarySearch(cari, mid + 1, right);
+            // }
+            // untuk data DESC (besar ke kecil)
+            else if (listMhs[mid].ipk < cari) {
+                return findBinarySearch(cari, left, mid - 1);
+            } else {
+                return findBinarySearch(cari, mid + 1, right);
+            }
+        }
+
+        return -1;
     }
 
 }
