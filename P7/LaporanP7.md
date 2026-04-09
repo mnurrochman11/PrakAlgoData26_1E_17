@@ -6,11 +6,11 @@
 
 ## 6.2. Searching/ Pencarian Menggunakan Algoritma Sequential Search
 ### 6.2.1. Langkah-langkah Percobaan Sequential Search
-![images](images/621_1.png)
-![images](images/621_2.png)
-![images](images/621_3.png)
+![Images](Images/621_1.png)
+![Images](Images/621_2.png)
+![Images](Images/621_3.png)
 ### 6.2.2. Verifikasi Hasil Percobaan
-![images](images/622.png)
+![Images](Images/622.png)
 ### 6.2.3. Pertanyaan
 1. - tampilPosisi(): Menampilkan posisi/index data yang ditemukan
    - tampilDataSearch() : Menampilkan isi data mahasiswa yang ditemukan
@@ -24,10 +24,10 @@
    - Hasilnya: posisi terakhir yang sama akan disimpan
 ## 6.3. Searching/ Pencarian Menggunakan Algoritma Binary Search
 ### 6.3.1. Langkah-langkah Percobaan Binary Search
-![images](images/631_1.png)
-![images](images/631_2.png)
+![Images](Images/631_1.png)
+![Images](Images/631_2.png)
 ### 6.3.2. Verifikasi Hasil Percobaan
-![images](images/632.png)
+![Images](Images/632.png)
 
 ### 6.3.3. Pertanyaan
 1. Membagi data menjadi dua bagian : mid = (left + right) / 2;
@@ -40,14 +40,14 @@
 4. Tidak bisa bekerja dengan benar, karena binary search butuh data terurut
 5. Hasil tidak sesuai
 
-![images](images/633_no5_1.png)
+![Images](Images/633_no5_1.png)
 
 Cara memperbaiki ubah :
-![images](images/633_no5_2.png)
+![Images](Images/633_no5_2.png)
 6. Data tidak ditemukan
    - Jika left > right
    - Method akan return -1
 7. Ubah di MahasiswaDemo17:
-![images](images/633_no7_1.png)
-![images](images/633_no7_2.png)
-![images](images/633_no7_hasil.png)
+![Images](Images/633_no7_1.png)
+![Images](Images/633_no7_2.png)
+![Images](Images/633_no7_hasil.png)
