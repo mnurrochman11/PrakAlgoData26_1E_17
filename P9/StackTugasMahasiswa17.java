@@ -55,10 +55,21 @@ public class StackTugasMahasiswa17 {
         }
     }
 
-    public void print(){
-        for (int i = 0; i <= top; i++) {
+    public void print() {
+        for (int i = top; i >= 0; i--) {
             System.out.println(stack[i].nama + "\t" + stack[i].nim + "\t" + stack[i].kelas);
         }
         System.out.println("");
+    }
+
+    public Mahasiswa17 lihatTerbawah() {
+        if (!isEmpty()) {
+            return stack[0];
+        }
+        return null;
+    }
+
+    public int jumlah() {
+        return top + 1;
     }
 }
