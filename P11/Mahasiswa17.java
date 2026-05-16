@@ -1,0 +1,28 @@
+package P11;
+
+public class Mahasiswa17 {
+    String nim;
+    String nama;
+    String kelas;
+    double ipk;
+
+    Mahasiswa17() {
+
+    }
+
+    Mahasiswa17(String nim, String nama, String kelas, double ipk) {
+        this.nim = nim;
+        this.nama = nama;
+        this.kelas = kelas;
+        this.ipk = ipk;
+    }
+
+    void tampilInformasi() {
+        System.out.println(
+                nama + "\t" +
+                        nim + "\t" +
+                        kelas + "\t" +
+                        ipk);
+    }
+
+}
