@@ -55,11 +55,11 @@ public class DoubleLinkedListMain17 {
                     list.insertAfter(keyNim, dataBaru);
                     break;
                 case 4:
-                    // list.removeFirst17();
-                    // break;
+                    list.removeFirst17();
+                    break;
                 case 5:
-                    // list.removeLast17();
-                    // break;
+                    list.removeLast17();
+                    break;
                 case 6:
                     list.print();
                     break;

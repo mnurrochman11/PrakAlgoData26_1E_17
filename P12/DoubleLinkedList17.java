@@ -90,4 +90,40 @@ public class DoubleLinkedList17 {
             current = current.prev;
         }
     }
+
+    public void removeFirst17() {
+        if (isEmpty()) {
+            System.out.println("Linked List kosong");
+            return;
+        }
+
+        Node17 hapus = head;
+
+        if (head == tail) {
+            head = tail = null;
+        } else {
+            head = head.next;
+            head.prev = null;
+        }
+        System.out.println("Data berhasil dihapus");
+        hapus.data.tampil();
+    }
+
+    public void removeLast17() {
+        if (isEmpty()) {
+            System.out.println("Linked List kosong");
+            return;
+        }
+
+        Node17 hapus = tail;
+
+        if (head == tail) {
+            head = tail = null;
+        } else {
+            tail = tail.prev;
+            tail.next = null;
+        }
+        System.out.println("Data berhasil dihapus");
+        hapus.data.tampil();
+    }
 }
