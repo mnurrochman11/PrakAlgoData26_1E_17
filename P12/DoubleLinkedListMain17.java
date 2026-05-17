@@ -34,6 +34,13 @@ public class DoubleLinkedListMain17 {
             System.out.println("5. Hapus data di akhir");
             System.out.println("6. Tampilkan data");
             System.out.println("7. Tampilkan data reverse");
+            System.out.println("8. Tambah data pada index tertentu");
+            System.out.println("9. Hapus data setelah NIM tertentu");
+            System.out.println("10. Hapus data pada index tertentu");
+            System.out.println("11. Tampilkan data pertama");
+            System.out.println("12. Tampilkan data terakhir");
+            System.out.println("13. Tampilkan data pada index");
+            System.out.println("14. Tampilkan jumlah data");
             System.out.println("0. Keluar");
             System.out.print("pilihan menu : ");
             pilihan = sc.nextInt();
@@ -65,6 +72,39 @@ public class DoubleLinkedListMain17 {
                     break;
                 case 7:
                     list.printReverse();
+                    break;
+                case 8:
+                    System.out.print("Masukkan index: ");
+                    int indexTambah = sc.nextInt();
+                    sc.nextLine();
+                    Mahasiswa17 dataIndex = inputMahasiswa(sc);
+                    list.add(indexTambah, dataIndex);
+                    break;
+                case 9:
+                    System.out.print("Masukkan NIM key: ");
+                    String keyRemove = sc.nextLine();
+                    list.removeAfter(keyRemove);
+                    break;
+                case 10:
+                    System.out.print("Masukkan index yang akan dihapus: ");
+                    int indexHapus = sc.nextInt();
+                    sc.nextLine();
+                    list.remove(indexHapus);
+                    break;
+                case 11:
+                    list.getFirst();
+                    break;
+                case 12:
+                    list.getLast();
+                    break;
+                case 13:
+                    System.out.print("Masukkan index: ");
+                    int indexCari = sc.nextInt();
+                    sc.nextLine();
+                    list.getIndex(indexCari);
+                    break;
+                case 14:
+                    list.getSize();
                     break;
                 case 0:
                     System.out.println("Program selesai");
