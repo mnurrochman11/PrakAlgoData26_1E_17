@@ -40,16 +40,18 @@ public class BinaryTree17 {
     boolean find(double ipk) {
         boolean result = false;
         Node17 current = root;
+
         while (current != null) {
             if (current.mahasiswa.ipk == ipk) {
                 result = true;
                 break;
-            } else if (ipk > current.mahasiswa.ipk) {
+            } else if (ipk < current.mahasiswa.ipk) {
                 current = current.left;
             } else {
                 current = current.right;
             }
         }
+
         return result;
     }
 
@@ -162,6 +164,70 @@ public class BinaryTree17 {
                 }
                 successor.left = current.left;
             }
+        }
+    }
+
+    void addRekursif(Mahasiswa17 mahasiswa) {
+        root = addRekursif(root, mahasiswa);
+    }
+
+    Node17 addRekursif(Node17 current, Mahasiswa17 mahasiswa) {
+        if (current == null) {
+            return new Node17(mahasiswa);
+        }
+
+        if (mahasiswa.ipk < current.mahasiswa.ipk) {
+            current.left = addRekursif(current.left, mahasiswa);
+        } else {
+            current.right = addRekursif(current.right, mahasiswa);
+        }
+
+        return current;
+    }
+
+    void cariMinIPK() {
+        if (isEmpty()) {
+            System.out.println("Binary Tree kosong");
+            return;
+        }
+
+        Node17 current = root;
+
+        while (current.left != null) {
+            current = current.left;
+        }
+
+        current.mahasiswa.tampilInformasi();
+    }
+
+    void cariMaxIPK() {
+        if (isEmpty()) {
+            System.out.println("Binary Tree kosong");
+            return;
+        }
+
+        Node17 current = root;
+
+        while (current.right != null) {
+            current = current.right;
+        }
+
+        current.mahasiswa.tampilInformasi();
+    }
+
+    void tampilMahasiswaIPKdiAtas(double ipkBatas) {
+        tampilMahasiswaIPKdiAtas(root, ipkBatas);
+    }
+
+    void tampilMahasiswaIPKdiAtas(Node17 node, double ipkBatas) {
+        if (node != null) {
+            tampilMahasiswaIPKdiAtas(node.left, ipkBatas);
+
+            if (node.mahasiswa.ipk > ipkBatas) {
+                node.mahasiswa.tampilInformasi();
+            }
+
+            tampilMahasiswaIPKdiAtas(node.right, ipkBatas);
         }
     }
 

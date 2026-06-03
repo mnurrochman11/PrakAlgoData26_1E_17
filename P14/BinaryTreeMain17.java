@@ -31,7 +31,16 @@ public class BinaryTreeMain17 {
         System.out.println("\nPreOrder traversal: ");
         bst.traversePreOrder(bst.root);
         System.out.println("\nPostOrder traversal: ");
-        bst.traversePostOrder(bst.root);    
+        bst.traversePostOrder(bst.root);
+
+          System.out.println("\nMahasiswa dengan IPK terkecil");
+        bst.cariMinIPK();
+
+        System.out.println("\nMahasiswa dengan IPK terbesar");
+        bst.cariMaxIPK();
+
+        System.out.println("\nMahasiswa dengan IPK di atas 3.50");
+        bst.tampilMahasiswaIPKdiAtas(3.50);
 
         System.out.println("\nPenghapusan data mahasiswa");
         bst.delete(3.57);
