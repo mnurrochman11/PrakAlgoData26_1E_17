@@ -21,7 +21,8 @@ public class ContohList {
                                 l.get(0), l.size(), l.get(l.size() - 1));
 
                 System.out.println("---------------------------------------------");
-                List<String> names = new LinkedList<>();
+
+                LinkedList<String> names = new LinkedList<>();
                 names.add("Noureen");
                 names.add("Akhleema");
                 names.add("Shannum");
